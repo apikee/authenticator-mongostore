@@ -37,7 +37,6 @@ export class MongoStore extends Store {
   findSubjectByToken = async (token: string) => {
     try {
       const record = await RecordModel.findOne({ _id: token });
-      console.log({ record });
       return record?.subject as string;
     } catch (error) {
       console.log("Cannot findSubjectByToken", error);
