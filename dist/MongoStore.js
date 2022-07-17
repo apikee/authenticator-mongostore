@@ -36,7 +36,6 @@ class MongoStore extends authenticator_common_1.Store {
     findSubjectByToken = async (token) => {
         try {
             const record = await models_1.RecordModel.findOne({ _id: token });
-            console.log({ record });
             return record?.subject;
         }
         catch (error) {
