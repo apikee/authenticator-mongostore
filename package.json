@@ -1,5 +1,6 @@
 {
   "name": "@apikee/authenticator-mongostore",
+  "description": "MongoDB Store for @apikee/authenticator",
   "version": "0.0.1",
   "repository": {
     "type": "git",
